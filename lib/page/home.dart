@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:course_app/widget/profile_pic.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -51,17 +52,8 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                Container(
-                  width: 50.0,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage(
-                            'https://i.pinimg.com/originals/26/78/9e/26789e89c810065bcc629b15b42ba6f4.jpg'),
-                      )),
-                )
+                ProfilePic(
+                    'https://i.pinimg.com/originals/26/78/9e/26789e89c810065bcc629b15b42ba6f4.jpg'),
               ],
             ),
             Container(
